@@ -1,0 +1,35 @@
+# ── Local LLM (via Ollama HTTP API) ─────────────────────────────────────────
+requests>=2.31.0            
+
+# ── LlamaIndex (local embeddings, no OpenAI) ─────────────────────────────────
+llama-index-core>=0.10.0
+llama-index-llms-ollama>=0.1.0          
+llama-index-embeddings-huggingface>=0.2.0  
+
+# ── Local sentence embeddings (runs on CPU, no GPU needed) ───────────────────
+sentence-transformers>=2.7.0
+
+# ── Speech — Text-to-Speech (Windows SAPI5, built-in, FREE) ──────────────────
+pyttsx3>=2.90
+
+# ── Speech — Speech-to-Text ───────────────────────────────────────────────────
+SpeechRecognition>=3.10.0
+pyaudio>=0.2.14             
+
+# ── Fully Offline STT (optional but recommended — no internet needed) ─────────
+# vosk>=0.3.45               # Uncomment after: pip install vosk
+# Then download model from https://alphacephei.com/vosk/models
+# Extract to: C:\Users\<you>\.ai_assistant\vosk_model\
+
+# ── System Tray ───────────────────────────────────────────────────────────────
+pystray>=0.19.5
+Pillow>=10.0.0
+
+# ── Global Hotkeys ────────────────────────────────────────────────────────────
+keyboard>=0.13.5
+
+# ── Screenshot (optional) ─────────────────────────────────────────────────────
+mss>=9.0.1
+
+# ── Build EXE (run once on Windows) ──────────────────────────────────────────
+pyinstaller>=6.0.0
